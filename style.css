@@ -223,6 +223,8 @@ a:hover {
 @media (max-width: 768px) {
     header nav {
         padding: 16px 20px 40px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     .flostherlogo {
@@ -265,6 +267,11 @@ a:hover {
         padding: 22px;
     }
 
+    .card-projeto::before {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
     .card-projeto h3 {
         font-size: 18px;
     }
@@ -272,6 +279,8 @@ a:hover {
     .trabalhos {
         margin-top: 40px;
         padding: 28px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 
     #contato {
@@ -280,5 +289,10 @@ a:hover {
 
     #contato h2 {
         font-size: 24px;
+    }
+
+    body::before,
+    body::after {
+        filter: blur(60px);
     }
 }
