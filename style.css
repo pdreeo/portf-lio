@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::before {
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    top: -100px;
+    left: -100px;
+}
+
+body::after {
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.02);
+    bottom: 0;
+    right: -150px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px 60px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+.flostherlogo {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    transition: text-shadow 0.3s ease;
+}
+
+.flostherlogo:hover {
+    text-shadow: 0 0 10px #f5f5f5;
+}
+
+.contatopage {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: text-shadow 0.3s ease;
+}
+
+.contatopage:hover {
+    text-shadow: 0 0 10px #f5f5f5;
+}
+
+main {
+    padding-top: 110px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero {
+    padding: 60px 0 80px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cfcfcf;
+    max-width: 650px;
+}
+
+.projetos {
+    padding: 60px 0;
+}
+
+.projetos h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.projetosconceito {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card-projeto {
+    position: relative;
+    border-radius: 16px;
+    padding: 28px;
+    isolation: isolate;
+    transition: transform 0.2s ease;
+}
+
+.card-projeto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    z-index: -1;
+
+    -webkit-mask-image: radial-gradient(ellipse farthest-corner at center, black 55%, transparent 100%);
+    mask-image: radial-gradient(ellipse farthest-corner at center, black 55%, transparent 100%);
+}
+
+.card-projeto:hover {
+    transform: translateY(-4px);
+}
+
+.card-projeto:hover::before {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card-projeto h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card-projeto p {
+    font-size: 15px;
+    color: #cfcfcf;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-projeto a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trabalhos {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.trabalhos h2 {
+    margin-bottom: 12px;
+}
+
+#contato {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+#contato p {
+    color: #cfcfcf;
+    margin-bottom: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #888;
+    font-size: 14px;
+}
+
+a {
+    color: #f5f5f5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(245, 245, 245, 0.4);
+    transition: text-decoration-color 0.2s ease, color 0.2s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    text-decoration-color: #f5f5f5;
+    text-shadow: 0 0 10px #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        padding: 16px 20px 40px;
+    }
+
+    .flostherlogo {
+        font-size: 20px;
+    }
+
+    .contatopage {
+        font-size: 14px;
+    }
+
+    main {
+        padding-top: 90px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero {
+        padding: 30px 0 50px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .projetos h2 {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .projetosconceito {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card-projeto {
+        padding: 22px;
+    }
+
+    .card-projeto h3 {
+        font-size: 18px;
+    }
+
+    .trabalhos {
+        margin-top: 40px;
+        padding: 28px;
+    }
+
+    #contato {
+        padding: 50px 0;
+    }
+
+    #contato h2 {
+        font-size: 24px;
+    }
+}
