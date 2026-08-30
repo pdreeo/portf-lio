@@ -1,57 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flosther.</title>
+
+    <title>flosther. — desenvolvimento web</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
         <nav>
-            <a href="#flosther" class="flostherlogo">flosther.</a>
-            <a href="#contato" class="contatopage">contato.</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero" id="flosther">
-                <div class="herocontent">
-                    <h1>olá, eu sou o flosther.</h1>
-                    <p>sou um desenvolvedor web apaixonado por criar 
-                    experiências digitais incríveis. 
-                    meu objetivo é transformar ideias em realidade 
-                    através de soluções inovadoras e eficientes.</p>
-                 </div>
-        </section>
-       <section class="projetos">
-            <h2>projetos conceito.</h2>
-            <div class="projetosconceito">
-                <div class="card-projeto">
-                    <h3>audioflux — site conceito de uma daw.</h3>
-                    <p>site responsivo focado em identidade visual e experiência de produto.</p>
-                    <a href="https://pdreeo.github.io/daw/" target="_blank">ver projeto.</a>
-                </div>
-                <div class="card-projeto">
-                    <h3>oak coffe — site conceito de uma cafeteria.</h3>
-                    <p>site institucional elegante de uma cafeteria.</p>
-                    <a href="https://pdreeo.github.io/cafeteria/" target="_blank">ver projeto.</a>
-                </div>
+
+            <a href="#flosther" class="flostherlogo">
+                flosther.
+            </a>
+
+            <div class="navlinks">
+                <a href="#projetos">projetos.</a>
+                <a href="#contato">contato.</a>
             </div>
 
-            <div class="trabalhos">
-                <h2>trabalhos reais.</h2>
-                <p>seu site pode aparecer aqui.</p>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- hero -->
+
+        <section class="hero" id="flosther">
+
+            <div class="herocontent">
+
+                <p class="hero-tag">
+                    desenvolvimento front-end.
+                </p>
+
+                <h1>
+                    eu crio sites modernos e responsivos para negócios.
+                </h1>
+
+                <p class="hero-descricao">
+                    desenvolvo sites institucionais e landing pages com foco
+                    em clareza, boa apresentação e uma experiência consistente
+                    em diferentes dispositivos.
+                </p>
+
+                <div class="hero-acoes">
+
+                    <a href="#projetos" class="botao-principal">
+                        ver projetos.
+                    </a>
+
+                    <a href="#contato" class="botao-secundario">
+                        falar comigo.
+                    </a>
+
+                </div>
+
             </div>
+
         </section>
+
+
+        <!-- serviços -->
+
+        <section class="servicos">
+
+            <h2>o que eu faço.</h2>
+
+            <div class="servicos-grid">
+
+                <div class="card-servico">
+
+                    <h3>sites institucionais.</h3>
+
+                    <p>
+                        páginas profissionais para apresentar seu negócio,
+                        seus serviços e facilitar o contato com clientes.
+                    </p>
+
+                </div>
+
+
+                <div class="card-servico">
+
+                    <h3>landing pages.</h3>
+
+                    <p>
+                        páginas focadas em apresentar uma oferta de forma clara,
+                        direta e visualmente convincente.
+                    </p>
+
+                </div>
+
+
+                <div class="card-servico">
+
+                    <h3>design responsivo.</h3>
+
+                    <p>
+                        interfaces adaptadas para funcionar bem em computadores,
+                        tablets e celulares.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- projetos -->
+
+        <section class="projetos" id="projetos">
+
+            <h2>projetos selecionados.</h2>
+
+            <div class="projetosconceito">
+
+                <div class="card-projeto">
+
+                    <p class="tipo-projeto">
+                        projeto conceito.
+                    </p>
+
+                    <h3>
+                        audioflux — plataforma de produção musical.
+                    </h3>
+
+                    <p>
+                        site responsivo com múltiplas páginas, identidade visual
+                        própria e experiência inspirada em produtos reais
+                        do mercado musical.
+                    </p>
+
+                    <a
+                        href="https://pdreeo.github.io/daw/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ver projeto.
+                    </a>
+
+                </div>
+
+
+                <div class="card-projeto">
+
+                    <p class="tipo-projeto">
+                        projeto conceito.
+                    </p>
+
+                    <h3>
+                        oak coffee — cafeteria.
+                    </h3>
+
+                    <p>
+                        site institucional responsivo criado para apresentar
+                        uma cafeteria, seus produtos e sua identidade de forma
+                        simples e elegante.
+                    </p>
+
+                    <a
+                        href="https://pdreeo.github.io/cafeteria/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        ver projeto.
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contato -->
+
         <section id="contato">
-            <h2>vamos conversar.</h2>
-             <p>tem um projeto em mente? me chama no whatsapp.</p>
-            <a href="https://wa.me/5561986452634" target="_blank" rel="noopener">chamar no whatsapp.</a>
+
+            <p class="contato-tag">
+                tem um projeto em mente?
+            </p>
+
+            <h2>
+                vamos criar algo para o seu negócio.
+            </h2>
+
+            <p>
+                me chama no whatsapp e me conta o que você precisa.
+            </p>
+
+            <a
+                href="https://wa.me/5561986452634"
+                target="_blank"
+                rel="noopener"
+                class="botao-principal"
+            >
+                falar no whatsapp.
+            </a>
+
         </section>
+
     </main>
+
+
     <footer>
+
         <p>© 2026 flosther.</p>
+
     </footer>
-    
+
 </body>
+
 </html>
